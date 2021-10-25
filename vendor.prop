@@ -169,6 +169,7 @@ ro.vendor.sensors.sta_detect=true
 ro.vendor.sensors.mot_detect=true
 
 # SurfaceFlinger
+debug.sf.enable_gl_backpressure=1
 ro.surface_flinger.has_wide_color_display=true
 ro.surface_flinger.use_color_management=true
 
