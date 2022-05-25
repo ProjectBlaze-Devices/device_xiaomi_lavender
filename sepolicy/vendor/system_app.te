@@ -1,0 +1,7 @@
+hal_client_domain(system_app, hal_mlipay)
+allow system_app sysfs_leds:dir search;
+
+allow system_app sysfs_fpsinfo:file rw_file_perms;
+allow system_app sysfs_headphonegain:file rw_file_perms;
+allow system_app sysfs_micgain:file rw_file_perms;
+allow system_app sysfs_earpiecegain:file rw_file_perms;
