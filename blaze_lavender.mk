@@ -12,14 +12,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from lavender device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Inherit some common Evolution X stuff
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
-EVO_BUILD_TYPE := OFFICIAL
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_QUICK_TAP := true
+# Inherit some common ProjectBlaze stuff
+$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
+BLAZE_BUILD_TYPE := OFFICIAL
+BLAZE_MAINTAINER := Coptan
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_USE_PIXEL_CHARGER := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := evolution_lavender
+PRODUCT_NAME := blaze_lavender
 PRODUCT_DEVICE := lavender
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
